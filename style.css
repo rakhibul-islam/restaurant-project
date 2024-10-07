@@ -4,12 +4,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   font-family: "Work Sans", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 img {
   width: 100%;
@@ -22,8 +23,50 @@ img {
   background: rgb(82, 195, 3);
   color: white;
 }
+.text-black{
+    color: rgb(16, 16, 16);
+}
+.text-white{
+    color: rgb(255, 255, 255);
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* reset and common code starts here */
 
 /* banner section starts here */
+.header{
+    height: 100vh;
+    background: linear-gradient(to top, rgb(16, 16, 16) -19.5%,rgba(16, 16, 16, 0) 100%), url("./assets/hero-bg.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 
+}
+.banner{
+    max-width: 50%;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+.banner_title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.banner_heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.banner_description{
+    font-size: 0.7rem;
+}
 /* banner section ends here */
+
+/* responsive design */
+@media (max-width:992px) {
+    .banner{
+        max-width: 90%;
+      
+    } 
+}
