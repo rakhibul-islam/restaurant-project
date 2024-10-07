@@ -33,6 +33,24 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 10rem;
+    gap: 2.5rem;
+    
+}
+.font-medium{
+    font-size: 2rem;
+    color: black;
+}
+.font-small{
+    font-size: 1rem;
+    color: black;
 }
 /* reset and common code starts here */
 
@@ -46,13 +64,13 @@ img {
 }
 .banner{
     max-width: 50%;
-    flex-direction: column;
     gap: 1.5rem;
     text-align: center;
 }
 .banner_title{
     font-size: 1.3rem;
     font-weight: 500;
+   
 }
 .banner_heading{
     font-size: 2.5rem;
@@ -60,8 +78,30 @@ img {
 }
 .banner_description{
     font-size: 0.7rem;
+    
 }
+
 /* banner section ends here */
+
+/* main section starts here */
+.main{
+    margin: 2.5rem 0;
+
+}
+.card_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 0;
+}
+.brand_name{
+    background-color: rgba(82, 195, 3, 0.15);
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* main section ends here */
 
 /* responsive design */
 @media (max-width:992px) {
@@ -69,4 +109,16 @@ img {
         max-width: 90%;
       
     } 
+    .flex-space-around{
+    
+        flex-direction: column;
+        padding: 2rem 2rem;
+     
+       
+    }
+    .card{
+        box-shadow:0.1rem 0.2rem 0.8rem rgba(205, 202, 202.9);
+        padding: 2rem;
+        border-radius: 0.8rem;
+    }
 }
