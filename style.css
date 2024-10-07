@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* reset and common code starts here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.btn {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgb(82, 195, 3);
+  color: white;
+}
+/* reset and common code starts here */
+
+/* banner section starts here */
+
+/* banner section ends here */
